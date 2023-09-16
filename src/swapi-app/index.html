@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWAPI Explorer</title>
+    <link rel="stylesheet" href="../index.css" />
+    <script type="module" src="../swapi-app/src/js/utils.js"></script>
+    <script type="module" src="../swapi-app/src/js/api.js"></script>
+    <script type="module" src="../swapi-app/src/js/views.js"></script>
+    <script type="module" src="../swapi-app/src/js/main.js"></script>
+  </head>
+  <body class="star-wars-theme">
+    <div id="container">
+      <div><span class="loader"></span></div>
+      <div>
+        <div id="error-container"></div>
+        <div id="loader-container" class="loader-container"></div>
+        <div id="app">
+          <div>
+            <label for="vehicles-select">Selecciona un vehículo:</label>
+            <select id="vehicles-select"></select>
+            <div id="vehicle-container">
+              <div id="vehicle-details"></div>
+            </div>
+          </div>
+          <div>
+            <!-- Selector de Personas -->
+            <label for="people-select">Selecciona una persona:</label>
+            <select id="people-select"></select>
+            <div id="person-details"></div>
+          </div>
+          <div>
+            <!-- Selector de Planetas -->
+            <label for="planets-select">Selecciona un planeta:</label>
+            <select id="planets-select"></select>
+            <div id="planet-details"></div>
+          </div>
+          <div>
+            <!-- Selector de Películas -->
+            <label for="films-select">Selecciona una película:</label>
+            <select id="films-select"></select>
+            <div id="film-details"></div>
+          </div>
+          <div>
+            <!-- Selector de Especies -->
+            <label for="species-select">Selecciona una especie:</label>
+            <select id="species-select"></select>
+            <div id="specie-details"></div>
+          </div>
+          <div>
+            <label for="starships-select"> Selecciona una nave-espacial:</label>
+            <select id="starships-select"></select>
+            <div id="starship-details"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contenedores para mostrar la información -->
+  </body>
+</html>
